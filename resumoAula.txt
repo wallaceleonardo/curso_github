@@ -194,3 +194,27 @@ gti stash show -p 2
 
 >>> Aplicando uma stash
 git stash apply 2
+
+>>> Trabalhando com tags
+git tag -a v1.0 -m "Primeira versao do sistema"
+git tag -a v2.0 -m "Novas funcionalidades da home do sistema"
+
+>>> Visualizando as tags
+git tag
+
+C:\cursogit\projeto1>git tag
+v1.0
+v2.0
+
+
+>>> Analisando uma tag
+git show v1.0
+
+>>> Alternando entre tags
+git checkout v1.0
+
+>>> Enviando uma tag especifica para o repositório GitHub
+git push origin v1.0
+
+>>> Enviando todas as tags para o repositório GitHub
+git push origin --tags
