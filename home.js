@@ -3,8 +3,8 @@ function mostraNome(nome) {
 }
 
 
-function mostraSobreNome(sobreNome) {
-    return sobreNome
+function mostraSobreNome(nome, sobreNome) {
+    return nome + sobreNome;
 }
 
 
