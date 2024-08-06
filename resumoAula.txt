@@ -182,3 +182,6 @@ git branch -d page_teste
 
 >>> Unindo branch
 git merge
+
+>>> Conhecendo o Stash <<< Volta uma branch ao status original do ultimo commit
+git stash
