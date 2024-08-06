@@ -171,3 +171,11 @@ git branch page_home
 >>> Mudando de uma branch pra outra
 git checkout page_home
 
+>>> Criando e Mudando de uma vez só para uma nova branch
+git checkout -b "page_teste"
+
+>>> Enviando ao Github a nova branch
+git push --set-upstream origin page_home
+
+>>> Deletando uma branch
+git branch -d page_teste
