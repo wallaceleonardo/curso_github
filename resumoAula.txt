@@ -167,7 +167,6 @@ C:\cursogit\projeto1>git branch
 >>> Criando uma nova branch
 git branch page_home
 
-
 >>> Mudando de uma branch pra outra
 git checkout page_home
 
