@@ -154,3 +154,20 @@ git reset --hard origin/main
 
 * --hard força o reset na branch main
 quando se utiliza o git reset, o git vai ao GitHub e trás o último commit feito
+
+
+############## branch ####################
+
+>>> Visualizando as branch do projeto
+git branch
+
+C:\cursogit\projeto1>git branch
+* main
+
+>>> Criando uma nova branch
+git branch page_home
+
+
+>>> Mudando de uma branch pra outra
+git checkout page_home
+
