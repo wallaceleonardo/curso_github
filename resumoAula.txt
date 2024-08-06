@@ -176,3 +176,6 @@ git checkout -b "page_teste"
 
 >>> Enviando ao Github a nova branch
 git push --set-upstream origin page_home
+
+>>> Deletando uma branch
+git branch -d page_teste
