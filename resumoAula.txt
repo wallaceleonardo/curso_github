@@ -185,3 +185,12 @@ git merge
 
 >>> Conhecendo o Stash <<< Volta uma branch ao status original do ultimo commit
 git stash
+
+>>> Listando as stashs
+git stash list 
+
+>>> Visualizando as stashs
+gti stash show -p 2
+
+>>> Aplicando uma stash
+git stash apply 2
