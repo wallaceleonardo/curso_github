@@ -218,3 +218,22 @@ git push origin v1.0
 
 >>> Enviando todas as tags para o repositório GitHub
 git push origin --tags
+
+
+>>> Buscando todas branches no repositório GitHub
+git fetch -a
+
+C:\cursogit\projeto1>git fetch -a
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), 344 bytes | 18.00 KiB/s, done.
+From https://github.com/wallaceleonardo/curso_github
+ * [new branch]      cadastro   -> origin/cadastro
+
+>>> Acessando a nova branch
+git checkout cadastro
+
+>>> Sincronizando as branchs
+git pull
