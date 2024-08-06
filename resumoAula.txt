@@ -237,3 +237,96 @@ git checkout cadastro
 
 >>> Sincronizando as branchs
 git pull
+
+
+>>> Usando git gc <<< Utilizado para melhorar a performace do repositório
+git gc
+
+C:\cursogit\desafio\clone1>git gc
+Enumerating objects: 117, done.
+Counting objects: 100% (117/117), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (50/50), done.
+Writing objects: 100% (117/117), done.
+Total 117 (delta 59), reused 113 (delta 58), pack-reused 0 (from 0)
+
+>>> Utilizando o shortlog
+git shortlog
+
+Wallace Leonardo Tolentino (2):
+      Create README.md
+      Create java
+
+wallacelt (30):
+      Estou criando o arquivo com os nomes da empresa
+      Lista com os nomes dos funcionários
+      Criando nossa página home do projeto
+      Colocando h2 na home
+      Criando novas funcionalidades na home com paragrafo
+      Alterando o arquivo README
+      Tirando alguns nomes da nossa lista
+      adcionando gitignore ao projeto
+      Criando arquivo com o resumo do curso
+      Complementando arquivo resumoAula
+      Merge branch 'main' of https://github.com/wallaceleonardo/curso_github
+      deletando java
+      Criando descrição da página home
+      Complementando arquivo resumoAula
+      Alterando arquivo resumoAula
+      Alterando o arquivo resumoAula
+      Alterando o arquivo resumoAula
+      Finalizando pagina home com toda descricao
+      Regularizando branch main
+      Atualizando page_home
+      Regularizando Main
+      Finalizado a segunda parte da home
+      Merge branch 'page_home'
+      Finalizado o sistema de login
+      Alterando o arquivo resumoAula
+      atualizando o resumoAula
+      Nova home finalziada
+      Atualizando resumoAula
+      Atualizando arquivo resumoAula
+      Finalizando a funcionalidade de mostrar os dados do usuario
+
+>>> Conhecendo diff
+git diff
+
+C:\cursogit\desafio\clone1>git diff
+diff --git a/empresa.txt b/empresa.txt
+index 0078b81..e458a38 100644
+--- a/empresa.txt
++++ b/empresa.txt
+@@ -1 +1,4 @@
+ Banco do Brasil
++Sujeito programador
++Curso Git
++YouTube
+
+>>> Verificando as diferencas em arquivo especifico
+git diff HEAD: nomes.txt
+
+C:\cursogit\desafio\clone1>git diff HEAD: nomes.txt
+
+C:\cursogit\desafio\clone1>git diff HEAD: nomes.txt
+diff --git a/nomes.txt b/nomes.txt
+index 0cdf5ea..66696fb 100644
+--- a/nomes.txt
++++ b/nomes.txt
+@@ -5,3 +5,5 @@ Pollyana
+ Sofia
+ Leonardo
+ Sujeito programador
++Jorge
++
+
+>>> Verificando as diferencas em pasta
+git diff HEAD: /styles/arquivo.css
+
+>>> Usando o reflog
+git reflog
+
+C:\cursogit\desafio\clone1>git reflog
+dc89045 (HEAD -> listagem, origin/listagem) HEAD@{0}: commit: Finalizando a funcionalidade de mostrar os dados do usuario
+fd86e24 (origin/main, origin/HEAD, main) HEAD@{1}: checkout: moving from main to listagem
+fd86e24 (origin/main, origin/HEAD, main) HEAD@{2}: clone: from https://github.com/wallaceleonardo/curso_github.git
