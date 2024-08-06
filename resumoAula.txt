@@ -179,3 +179,6 @@ git push --set-upstream origin page_home
 
 >>> Deletando uma branch
 git branch -d page_teste
+
+>>> Unir branchs
+git merge 
