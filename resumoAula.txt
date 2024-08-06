@@ -1,0 +1,156 @@
+>>> Configurando as credenciais no Git
+
+git config --global user.name "wallacelt"
+git config --global user.email "Wallace.tolentino@gmail.com"
+
+>>> Verificando as credenciais no Git
+
+git config user.name
+git config user.email
+
+
+>>> Criando um repositório
+
+git init
+
+Com isso você está iniciando um repositório dessa pasta que digitou git init.
+Todos os arquivos dentro dessa pasta agora serão reconhecidos pelo git como um projeto.
+
+	C:\Users\Wallace>cd\
+
+	C:\>cd cursogit
+
+	C:\cursogit>cd projeto1
+
+	C:\cursogit\projeto1>git status
+	fatal: not a git repository (or any of the parent directories): .git
+
+	C:\cursogit\projeto1>git init
+	Initialized empty Git repository in C:/cursogit/projeto1/.git/
+
+	C:\cursogit\projeto1>git status
+	On branch main
+
+	No commits yet
+
+	nothing to commit (create/copy files and use "git add" to track)
+
+
+>>> Verificando o status do repositório
+
+git status
+
+>>> Adicionando arquivos ao git, para monitoração
+
+git add nomes.txt
+git add empresa.txt
+
+git add .  <<< Adicionando arquivos em lote ao git.
+
+
+>>> Commitando um arquivo no git
+
+git commit empresa.txt -m "Estou criando o arquivo com os nomes da empresa"
+
+>>> Commitando vários arquivos no git
+
+git commit -m "Criando nossa página home do projeto"
+
+
+echo "# curso_github" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+
+>>> Criando a branch
+
+git branch -M main
+
+
+>>> Conectando o Git ao Github
+git remote add origin https://github.com/wallaceleonardo/curso_github.git
+
+>>> Enviando pela primeira vez ao Github
+git push -u origin main
+
+>>> Enviando os arquivos do Git para o GitHub pela segunda vez
+git push
+
+>>> Sincronizando o GitHub com o Git local
+git pull
+
+>>> Gerando um clone do repositório GitHub
+git clone https://github.com/wallaceleonardo/curso_github.git
+
+git clone https://github.com/wallaceleonardo/curso_github.git . <<< Clona sem criar a pasta
+
+
+>>> Acessando o Logs
+git log
+
+C:\cursogit\projeto1>git log
+commit eee56bd905ed1041c50d938ef0a460312151a7b4 (HEAD -> main, origin/main)
+Author: wallacelt <wallace.tolentino@gmail.com>
+Date:   Mon Aug 5 22:55:35 2024 -0300
+
+    Alterando o arquivo README
+
+commit c2f12d5583f9cec8966c77c0aecb44e74a8e8ff4
+Author: Wallace Leonardo Tolentino <75217832+wallaceleonardo@users.noreply.github.com>
+Date:   Mon Aug 5 22:48:03 2024 -0300
+
+    Create README.md
+
+commit 192dc5b51b31592efb8d57ab1ccbbc67a1356997
+Author: wallacelt <wallace.tolentino@gmail.com>
+Date:   Mon Aug 5 22:44:05 2024 -0300
+
+    Criando novas funcionalidades na home com paragrafo
+
+commit 9ececb95481029abe21eba8983f516b73e2f54a1
+Author: wallacelt <wallace.tolentino@gmail.com>
+Date:   Mon Aug 5 21:43:08 2024 -0300
+
+    Colocando h2 na home
+
+commit a03e1911a2b6caeaba8e39037a3c24548aa608a0
+Author: wallacelt <wallace.tolentino@gmail.com>
+Date:   Mon Aug 5 21:32:26 2024 -0300
+
+    Criando nossa página home do projeto
+
+commit 99c870fe3e6218c118286778517d14b30712a07c
+Author: wallacelt <wallace.tolentino@gmail.com>
+Date:   Mon Aug 5 21:28:16 2024 -0300
+
+    Lista com os nomes dos funcionários
+
+commit f1cb5289319ba07e5483f3273d34838ada31a1e2
+Author: wallacelt <wallace.tolentino@gmail.com>
+Date:   Mon Aug 5 21:27:11 2024 -0300
+
+    Estou criando o arquivo com os nomes da empresa
+(END)
+
+>>> Para sair do log só aperta a tecla q(quit)
+
+
+>>> Revertendo arquivos com checkout (Voltando o arquivo para seu estado original)
+git checkout "nome do arquivo"
+
+git checkout index.html
+
+
+>>> Ignorando arquivos e pastas no git
+1) cria a pasta .gitignore na pasta do projeto
+2) informar os arquivos e pastas que devem ser ignorados e não enviados ao GitHub
+
+/node_modules <<< ignorando uma pasta
+.env.local <<< ignorando um arquivo
+
+
+>>> Voltando e dando reset
+git reset --hard origin/main
+
+* --hard força o reset na branch main
+quando se utiliza o git reset, o git vai ao GitHub e trás o último commit feito
